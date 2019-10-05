@@ -49,7 +49,9 @@ function question(i) {
                     do {
                         changeAnswer() //change Answer when changeAnswerQuestion does not equal to 0
                     } while (changeAnswerQuestion != 0);
-                } 
+                } else {
+                    return; // if i equals to 4 ( i.e. at question5 ) and all questions are answered, return it.
+                }
             } else {
                 question(i + 1); //since i does not equals to 4 (i.e. not question5 yet, proceed to the next question)
             }
